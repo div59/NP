@@ -1,0 +1,82 @@
+NP Reference ViVa Questions and answers
+1.	What is socket? 
+It is endpoint  of interface between transport layer process and application layer process.
+
+2.	Name the seven layers of the OSI model?
+Application layer
+Presentation layer
+Session layer
+Transport layer
+Network layer
+Data link layer
+Physical layer
+3.	 What is the difference between TCP and UDP?
+Parameter		TCP			UDP
+Type of Service-  Connection oriented         Connectionless
+Reliability-          More			less
+Acknowledgement- Yes			No
+Delivery-	     Inorder		      not guaranteed
+Retransmission-   yes for lost segments    no
+Handshaking-       Yes			       no
+Stream type-        Bytes		     message
+4.	What does socket consists of?
+A socket has three parts: protocol, local-address, local-port.
+5.	What is firewall? 
+A Firewall is a network security device that monitors and filters incoming and outgoing network traffic.
+
+6.	How do I monitor the activity of sockets?
+The socket is bind to specific port and IP address,  helps for monitoring the activities over socket.
+7.	What is the role of TCP protocol and IP protocol? 
+Transmission Control Protocol/Internet Protocol is a suite of communication protocols used to interconnect network devices on the internet. 
+8.	 How should I choose a port number for my server?
+Any port no can be chosen but the no must be above 1023 , as (0-1023) are system reserved port that can’t be used.
+9.	 What is routing?
+Routing is the process of selecting a path for traffic in a network or between or across multiple networks.
+10.	What is VPN?
+A virtual private network, or VPN, is an encrypted connection over the Internet from a device to a network.
+11.	How do I open a socket? 
+The socket command may be used to open either the client or server side of a connection,
+12.	 How do I create an input stream?
+getInputStream() method is used to initialize the inputstream for the socket.
+13.	How do I close a socket? 
+Close() method is used to close the socket.
+14.	 What is echo server? 
+An EchoServer is an application that allows a client and a server to connect so a client can send a message to the server and the server can receive the message and send, or echo, it back to the client.
+15.	 What this function bind() does?  
+bind() assigns the address specified by addr to the socket referred to by the file descriptor sockfd. Addrlen.
+16.	 What this function socket() does?
+socket()  creats the new socket and returns a socket descriptor for use in later system calls or -1 on error.
+17.	 What is IP address?
+A unique number assigned to machine or host for network connection.
+18.	 What are network host names?
+Hostname is an alias given to a computer on a TCP/IP network to identify it on the network. Hostnames are a friendlier way of identifying TCP/IP hosts than IP address.
+19.	 How to find a machine address?
+Open cmd and type command: ipconfig/all in windows, open terminal and type command: ifconfig  in Linux.
+20.	What is MAC address? 
+It is a unique 48 bit address given the NIC vendor for creation of network.
+21.	 What is multicasting?
+One sender and few recievers- group communication.
+22.	 What is DNS?
+It makes translation of Domain name to equivalent IP address to lacate the host on the network.
+23.	 How does TCP handshaking works? 
+It is three phase:
+Phase1- connection request
+Phase2- data transfer
+Phase3- connection termination
+24.	What is Wireshark?
+It is protocol and packet analyzer tool.
+25.	Which wireshark filter can be used to check all incoming requests to a HTTP web server?
+TCP port 80
+26.	How to capture packets using Wireshark in a switched Ethernet network?
+Choose the interface as etho or any relevant interface and click start it will capture the packets.
+27.	Explain the following features of NS3: i) Tracing ii) NetAnim
+Tracing: ASCII and pcap tracing- network traffic analysis 
+NetAnim: animation interface for NS3
+
+28.	Explain about the following : a. Pcap file b. gnuplot
+a.	Pcap file: a file that contains captured packtes information from wireshark.
+b.	Gnuplot: tool used for ploting graph against network traffic captured.
+29.	How does IPv6 solve the problem of  IPv4 exhaustion?
+Larger address space over IPv4, no NAT, increased security, true sense of Type Of Service(TOS) etc features.
+30.	What is RPL protocol? Explain its significance in IoT.
+The protocol suitable for routing of packets in Low Power lossy network applications like IoT. Since IoT needs a protocol with less utilization of battery power and more performance , then RPL becomes choice for usage in IoT deployment.
