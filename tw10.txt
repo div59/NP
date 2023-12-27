@@ -1,0 +1,12 @@
+Process Execution steps: 
+1. Goto File -> New Simulation 
+2. Name the simulation and click on create 
+3. Click on Motes -> Add motes -> Create a new mote type -> Sky mote 
+4. Click on Browse and select rpl-udp(/contiki-ng/examples/libs/rpl-udp) 
+5. Create udp-server.c and add 1 mote by clicking Motes -> Add new Mote -> Browse 
+6. Create udp-client.c and add 1 mote 
+7. Place both the motes close to each other 
+8. Configure 1 as server and 2 as client 
+9. Copy the server’s port number to the client. 
+10. Start the server and connect the client. 
+11. Run the simulation. 

@@ -1,0 +1,13 @@
+Program Execution Steps: 
+1. Open Wireshark and double-click on any-interface to start the packet capture process. 
+2. Open the browser and enter any website's fully qualified domain name in the browser 
+address bar and hit enter. 
+3. After the site is fully loaded, stop the capturing process, in Wireshark. 
+4. Type the following in, apply a filter column and hit-enter: tcp.flags.fin==1 and tcp.flags.ack 
+==1 
+5. Select any one of these listed packets, right-click and hover on conversation filter and select 
+TCP. 
+6. Once done analyze the TCP Packets. 
+7. Go to statistics: Generate I/O Graph, Flow Graph and study and analyze both the graphs 
+8. Observe TCP 3-way Handshake mechanism, data transfer and connection termination 
+through TCP 

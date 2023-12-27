@@ -1,0 +1,13 @@
+Program Execution Steps: 
+Capturing UDP packets with browser: 
+1. Open Wireshark and double-click on any-interface to start the packet capture process. 
+2. Open the browser and enter any website's fully qualified domain name in the browser 
+address bar and hit enter. 
+3. After the site is fully loaded, stop the capturing process in Wireshark go to edit in the menu 
+bar and select find packet option or just press CTRL+F. 
+4. In Find Packet menu bar, select the String option in the display filter drop-down menu and 
+enter the name of the website in the next box and click on find. 
+5. The arrow indicating towards the packet is the request packet, and the arrow coming out 
+from the packet is the response packet. 
+6. Click on any request or response DNS packet and examine UDP packet. 
+7. Go to statistics: Generate I/O Graph, Flow Graph and study and analyze both the graphs

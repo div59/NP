@@ -1,0 +1,29 @@
+Process Execution Steps: 
+Step 1 : Open UBUNTU and locate and open ns-allinone-3.28 folder on Desktop. 
+Step 2 : Go to ns-3.28 folder and open examples->tutorial->first.cc 
+Step 3 : In first.cc , include the following code. (Before – “Simulator::Run ();”) 
+
+
+#include “ns3/netanim-module.h” 
+AnimationInterface anim(“first, xml”); 
+AsciiTraceHelper ascii; 
+pointToPoint.EnableAsciiAll(ascii.CreateFileStream(“first.tr”)); 
+pointToPoint.EnablePcapAll(“first”); 
+
+
+
+Step 4 : Copy first.cc and paste it in ns-3.28->scratch folder. Remember that scratch folder should 
+contain only one .cc example file and it must contain scratch executable file named scratch
+simulator.cc and other files can be deleted. 
+Step 5 : Open terminal and change working directory to Desktop by cd Desktop and type following 
+commands to go to location where scratch executable file is located i.e. scratch folder. 
+Step 6 : cd ns-allinone-3.28 
+Step 7 : cd ns-3.28 
+Step 8 : Run the first.cc by entering following command. 
+./waf –run scratch/first 
+Step 9 : Once build is successful, return to ns-allinone-3.28 folder with cd ../ and enter into netanim
+3.108 with cd netanim-3.108 
+Step 10 : Now to see the animation, we have to open NetAnim software. So open by entering 
+./NetAnim on terminal. 
+Step 11 : In NetAnim, open first.xml by clicking on open XML trace file icon. 
+Step 12 : Click on run option/icon to see the animation. To see the packet transfer, open Packets Tab. 

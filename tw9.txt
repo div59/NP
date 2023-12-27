@@ -1,0 +1,24 @@
+Process Execution steps: 
+Go to the Location contiki-ng/tools/cooja/ with commands 
+1. Goto root directory 
+2. cd contiki-ng 
+3. cd tools 
+4. cd cooja 
+Run the cooja simulator with
+
+
+5. ant run  
+Steps to create motes and configure them as server and client 
+1. Goto File -> New Simulation 
+2. Name the simulation and click on create 
+3. Click on Motes -> Add motes -> Create a new mote type -> Sky mote 
+4. Click on Browse and select ipv6-hooks.c (/contiki-ng/examples/libs/ipv6-hooks) 
+5. Click on open and then on compile and then on create 
+6. Enter the number of motes as 4 and click on Add motes 
+7. Place all motes close to each other such that the coverage is 100% for each of them 
+8. Right click on mote 1 and then click More tools for Sky 1 and then on Serial Socket (SERVER). 
+Mote 1 has been configured as Server. 
+9. Similarly, configure motes 2, 3 and 4 as clients. 
+10. Copy the server’s listening port number and paste it as the port number for all clients. 
+11. Start the server and connect the client to the server. 
+12. Run the simulation by clicking on Simulation -> Run Simulation 
