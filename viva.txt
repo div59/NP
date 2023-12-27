@@ -111,7 +111,7 @@ NetAnim: animation interface for NS3
 28.	Explain about the following : a. Pcap file b. gnuplot
 a.	Pcap file: a file that contains captured packtes information from wireshark.
 b.	Gnuplot: tool used for ploting graph against network traffic captured.
-
+.
 
 29.	How does IPv6 solve the problem of  IPv4 exhaustion?
 Larger address space over IPv4, no NAT, increased security, true sense of Type Of Service(TOS) etc features.
